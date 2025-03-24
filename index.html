@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulFlex - AI-Powered Yoga</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #E6E6FA 0%, #87CEEB 100%);
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        }
+        .feature-icon {
+            transition: transform 0.3s ease;
+        }
+        .feature-icon:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-100 to-blue-100 opacity-50"></div>
+        <div class="glass-card rounded-2xl p-8 md:p-12 max-w-2xl w-full mx-auto relative z-10" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-bold text-center mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                SoulFlex
+            </h1>
+            <p class="text-xl md:text-2xl text-center text-gray-700 mb-8">
+                AI-powered yoga that adapts to you. Anytime. Anywhere.
+            </p>
+            <form class="space-y-4">
+                <input type="email" 
+                       placeholder="Be the first to try SoulFlex" 
+                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                <button type="submit" 
+                        class="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+                    Notify Me
+                </button>
+                <p class="text-sm text-gray-600 text-center">No spam. Just soulful yoga.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 px-4 bg-white/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-card rounded-xl p-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon text-4xl mb-4">🔄</div>
+                    <h3 class="text-xl font-semibold mb-2">Real-time Feedback</h3>
+                    <p class="text-gray-600">Get instant guidance as you flow</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="glass-card rounded-xl p-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon text-4xl mb-4">🧘</div>
+                    <h3 class="text-xl font-semibold mb-2">Custom Sessions</h3>
+                    <p class="text-gray-600">Tailored to your mood and goals</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="glass-card rounded-xl p-6 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon text-4xl mb-4">📈</div>
+                    <h3 class="text-xl font-semibold mb-2">Progress Tracking</h3>
+                    <p class="text-gray-600">Monitor your yoga journey</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="glass-card rounded-xl p-6 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon text-4xl mb-4">🤝</div>
+                    <h3 class="text-xl font-semibold mb-2">Health Integration</h3>
+                    <p class="text-gray-600">Syncs with Apple Health & Strava</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Preview Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">
+                Experience SoulFlex
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- App Screens -->
+                <div class="glass-card rounded-xl p-4" data-aos="fade-right">
+                    <div class="aspect-[9/16] bg-gradient-to-br from-purple-100 to-blue-100 rounded-lg flex items-center justify-center">
+                        <span class="text-gray-500">Practice Builder</span>
+                    </div>
+                </div>
+                <div class="glass-card rounded-xl p-4" data-aos="fade-right" data-aos-delay="100">
+                    <div class="aspect-[9/16] bg-gradient-to-br from-purple-100 to-blue-100 rounded-lg flex items-center justify-center">
+                        <span class="text-gray-500">Pose Feedback</span>
+                    </div>
+                </div>
+                <div class="glass-card rounded-xl p-4" data-aos="fade-right" data-aos-delay="200">
+                    <div class="aspect-[9/16] bg-gradient-to-br from-purple-100 to-blue-100 rounded-lg flex items-center justify-center">
+                        <span class="text-gray-500">Progress Report</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why SoulFlex Section -->
+    <section class="py-20 px-4 bg-white/50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8" data-aos="fade-up">
+                Yoga that listens, learns, and evolves with you
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card rounded-xl p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-3xl mb-4">🧘‍♀️</div>
+                    <p class="text-gray-700">Built by yogis + AI engineers</p>
+                </div>
+                <div class="glass-card rounded-xl p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-3xl mb-4">🎯</div>
+                    <p class="text-gray-700">Practice safely with intelligent pose suggestions</p>
+                </div>
+                <div class="glass-card rounded-xl p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-3xl mb-4">⚡️</div>
+                    <p class="text-gray-700">Designed for modern, busy lives</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 bg-white/30">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-gray-600 hover:text-purple-600 transition-colors">
+                    <span class="text-2xl">📸</span>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-purple-600 transition-colors">
+                    <span class="text-2xl">🎵</span>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-purple-600 transition-colors">
+                    <span class="text-2xl">🎥</span>
+                </a>
+            </div>
+            <div class="space-x-4 mb-4">
+                <a href="#" class="text-gray-600 hover:text-purple-600 transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-600 hover:text-purple-600 transition-colors">Contact</a>
+            </div>
+            <p class="text-gray-600 text-sm">
+                © 2025 Scent of Kindness LLC · SoulFlex.me
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html> 
